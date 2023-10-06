@@ -15,8 +15,6 @@ export const ImageGalleryItem = ({
     setIsModalOpen(false);
   };
 
-  
-
   return (
     <>
       <GalleryItemImage src={webformatURL} alt={tags} onClick={openModal} />
