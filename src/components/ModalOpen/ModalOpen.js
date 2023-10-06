@@ -29,13 +29,9 @@ const customStyles = {
   },
 };
 
-export const ModalOpen = ({ isModalOpen, closeModal, src, alt }) => {
+export const ModalOpen = ({ isOpen, closeModal, src, alt }) => {
   return (
-    <Modal
-      isOpen={isModalOpen}
-      onRequestClose={closeModal}
-      style={customStyles}
-    >
+    <Modal isOpen={isOpen} onRequestClose={closeModal} style={customStyles}>
       <img src={src} alt={alt} />
     </Modal>
   );

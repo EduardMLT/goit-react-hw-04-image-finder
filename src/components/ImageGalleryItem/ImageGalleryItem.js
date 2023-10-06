@@ -1,5 +1,5 @@
 import { GalleryItemImage } from './ImageGalleryItem.styled';
-import { ModalOpen } from '../Modal/Modal.js';
+import { ModalOpen } from '../ModalOpen/ModalOpen.js';
 import { useState } from 'react';
 
 export const ImageGalleryItem = ({
@@ -14,6 +14,8 @@ export const ImageGalleryItem = ({
   const closeModal = () => {
     setIsModalOpen(false);
   };
+
+  
 
   return (
     <>
